@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.left_form {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  background: #fff url(img/login_img.jpg) no-repeat;
+  background-size: cover;
+}
+
+.right_form {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.right_form form {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_form h2 {
+  font-size: 2em;
+  color: #063970;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.right_form form > input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+.right_form label {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.check {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.right_form input[type="submit"] {
+  width: 100%;
+  background-color: #063970;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 8px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .left_form {
+    display: none;
+  }
+
+  .right_form {
+    width: 100%;
+  }
+
+  .right_form form {
+    width: 95%;
+    padding: 0 1em;
+  }
+}
